@@ -64,29 +64,66 @@ A web-based Library Management System built using **Spring Boot**, **Thymeleaf**
 - Tested across modern web browsers for responsiveness and performance.
 
 ## 📸 Snapshots
+- **Login Page**
+![image](https://github.com/user-attachments/assets/6bd2dc99-b34b-4faf-9268-fca5f39e1975)
 
-- Login
-![image](https://github.com/user-attachments/assets/2b6338c7-3aa6-49fb-b699-f237654c8f13)
+- **Registration Page**
+![image](https://github.com/user-attachments/assets/0957db4d-4920-4988-acc4-66e8c2b0053a)
 
-- Register
-![image](https://github.com/user-attachments/assets/f2a46e5b-8a9f-4b1f-aef0-ee838d4e2c75)
+- **Admin Home Page**
+![image](https://github.com/user-attachments/assets/9bda023e-753f-4bdc-b00f-45870f645513)
 
-- Admin Dashboard
-![image](https://github.com/user-attachments/assets/9913b3b3-06db-4d0c-a9b1-5382ce382b26)
+- **Manage Users**
+![image](https://github.com/user-attachments/assets/ed7db79f-b8bb-46e4-8e1c-22bcc26772b6)
 
-- Manage Users
-![image](https://github.com/user-attachments/assets/7f251eec-91cf-466c-937b-985c57b3592a)
+- **Manage Books**
+![image](https://github.com/user-attachments/assets/99356e44-2134-4149-8aa1-7e3374a9ec3c)
 
-- Manage Books
-![image](https://github.com/user-attachments/assets/e0316641-a5a8-4209-8a7d-642f2d1cebab)
+- **View/Edit Books**
+![image](https://github.com/user-attachments/assets/b150b88a-0f4b-42e2-ba9d-a648e2750f78)
 
-- User Dashboard, Manage Books/Users, Reserve Books, Overdue & Fine pages.
+- **Edit User**
+![image](https://github.com/user-attachments/assets/e5d9525a-4f20-4331-b05f-08dd4cf46a99)
 
+- **View Reservation**
+![image](https://github.com/user-attachments/assets/f01ee1d0-dbc0-4ec8-a72b-f91a99d130a4)
+
+- **OverDue**
+![image](https://github.com/user-attachments/assets/f2854309-dd53-40bb-b4f5-cf912f2f26e9)
+
+- **Manage Fine**
+![image](https://github.com/user-attachments/assets/b44750f3-3575-4937-882d-0b4b11d490a7)
+
+- **User Home**
+![image](https://github.com/user-attachments/assets/19dd16b7-b466-4f01-89e3-8ef168e3ea0a)
+
+- **View Profile**
+![image](https://github.com/user-attachments/assets/95ca82ec-13eb-4f7a-923a-fa638630cc26)
+
+- **Edit Profile**
+![image](https://github.com/user-attachments/assets/37c59524-23c2-41c4-bb4a-03f609e6a294)
+
+- **Borrow Books**
+![image](https://github.com/user-attachments/assets/a6246db9-35d0-430a-bf51-751a8460153d)
+
+- **Reserved Books**
+![image](https://github.com/user-attachments/assets/3d99f18d-b68b-4364-a26a-54b4464b7e6e)
+
+- **Reserve Books**
+![image](https://github.com/user-attachments/assets/e32e7d92-79cd-4320-9e67-6dcff2f0e6e9)
+
+- **Return Books**
+![image](https://github.com/user-attachments/assets/be58eb3c-0108-46c4-972f-a5a19e30629d)
+
+- **Check/Pay**
+![image](https://github.com/user-attachments/assets/ae7f9043-09d1-4dd1-a3ce-e668d70632f0)
+
+- **Fine**
+![image](https://github.com/user-attachments/assets/490aa6c6-055f-4d19-9868-90de7919c9a8)
 
 ## 🙌 Contributors
-
-- [Ammar Hyder (22K-4816)]()
-- [Muhammad Ausaja Hussain (22K-5186)](https://github.com/ausajahussain)
+- [Ammar Hyder](https://github.com/ammar-hyder)
+- [Muhammad Ausaja Hussain](https://github.com/MuhammadAusajaHussain/)
 
 ---
 
