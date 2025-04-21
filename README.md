@@ -65,16 +65,23 @@ A web-based Library Management System built using **Spring Boot**, **Thymeleaf**
 
 ## 📸 Snapshots
 
-- Login, Register, Admin/User Dashboards, Manage Books/Users, Reserve Books, Overdue & Fine pages.
+- Login
+![image](https://github.com/user-attachments/assets/2b6338c7-3aa6-49fb-b699-f237654c8f13)
 
-## 📈 Future Enhancements
+- Register
+![image](https://github.com/user-attachments/assets/f2a46e5b-8a9f-4b1f-aef0-ee838d4e2c75)
 
-- Mobile app version
-- Notification system (email/SMS)
-- ML-based book recommendations
-- QR Code scanning for book identification
-- Analytics dashboard for Admin
-- Multi-language support
+- Admin Dashboard
+![image](https://github.com/user-attachments/assets/9913b3b3-06db-4d0c-a9b1-5382ce382b26)
+
+- Manage Users
+![image](https://github.com/user-attachments/assets/7f251eec-91cf-466c-937b-985c57b3592a)
+
+- Manage Books
+![image](https://github.com/user-attachments/assets/e0316641-a5a8-4209-8a7d-642f2d1cebab)
+
+- User Dashboard, Manage Books/Users, Reserve Books, Overdue & Fine pages.
+
 
 ## 🙌 Contributors
 
