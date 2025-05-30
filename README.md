@@ -29,21 +29,21 @@ An advanced Library Management System developed using **Spring Boot**, **Thymele
 ---
 
 ## 📂 Project Structure
-Library-Management-System/
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ └── com/
-│ │ │ └── example/
-│ │ │ └── library/
-│ │ │ ├── controllers/
-│ │ │ ├── models/
-│ │ │ └── services/
-│ │ └── resources/
-│ │ ├── templates/
-│ │ └── application.properties
-├── pom.xml
-└── README.md
+Library-Management-System/  
+├── src/  
+│ ├── main/  
+│ │ ├── java/  
+│ │ │ └── com/  
+│ │ │ └── example/  
+│ │ │ └── library/  
+│ │ │ ├── controllers/  
+│ │ │ ├── models/  
+│ │ │ └── services/  
+│ │ └── resources/  
+│ │ ├── templates/  
+│ │ └── application.properties  
+├── pom.xml  
+└── README.md  
 
 ---
 
@@ -142,5 +142,5 @@ Open your browser and go to: http://localhost:8080/
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! If you'd like to enhance the project, please fork the repository and submit a pull request.
