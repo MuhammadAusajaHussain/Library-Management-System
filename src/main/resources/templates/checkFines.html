@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Check Your Fines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Navbar Styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: relative; /* Changed from fixed to relative */
+            margin-top: 20px; /* Space below header */
+        }
+
+        nav .brand {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 8px 12px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #f39c12;
+            color: white;
+            border-radius: 4px;
+        }
+
+        nav .toggle-menu {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                right: 20px;
+                border-radius: 4px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            nav ul.show {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 0;
+            }
+
+            nav ul li a {
+                padding: 10px 20px;
+            }
+
+            nav .toggle-menu {
+                display: block;
+            }
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-top: 20px; /* Adjusted margin-top to add space below header */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        button {
+            padding: 6px 12px;
+            margin: 4px 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            opacity: 0.9;
+        }
+
+        button:disabled {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+
+        button.delete {
+            background-color: #f44336;
+        }
+
+        button.delete:hover {
+            background-color: #d32f2f;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<th:block th:replace="header :: header"></th:block>
+
+<nav>
+    <a href="#" class="brand"></a>
+    <ul>
+        <li><a href="#" th:href="@{/userHome}">User Dashboard</a></li>
+        <li><a href="#" th:href="@{/fines}">Check Fines</a></li>
+    </ul>
+</nav>
+
+<h1>Check Your Fines</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Fine ID</th>
+        <th>Borrowing ID</th>
+        <th>Fine Amount</th>
+        <th>Fine Due Date</th>
+        <th>Fine Status</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="fine : ${fines}">
+        <td th:text="${fine.fineId}"></td>
+        <td th:text="${fine.borrowing_Id}"></td>
+        <td th:text="${fine.fineAmount}"></td>
+        <td th:text="${fine.fineDueDate}"></td>
+        <td th:text="${fine.fineStatus}"></td>
+        <td>
+            <form th:action="@{/fines/pay/{fineId}(fineId=${fine.fineId})}" method="post" style="display:inline;">
+                <button type="submit" th:disabled="${fine.fineStatus == 'PAID'}">Mark as Paid</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<th:block th:replace="footer :: footer"></th:block>
+
+<script>
+    function toggleMenu() {
+        const menu = document.querySelector("nav ul");
+        menu.classList.toggle("show");
+    }
+</script>
+</body>
+</html>
