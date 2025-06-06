@@ -84,7 +84,7 @@ Open your browser and go to: http://localhost:8080/
 
 ---
 
-📸 Screenshots
+## 📸 Screenshots
 
 1. **Login Page:**
 ![image](https://github.com/user-attachments/assets/05478688-a37b-4e27-b26c-9718d71a6ae0)
